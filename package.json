@@ -13,7 +13,6 @@
 	},
 	"main": "squaresrt.js",
 	"browser": "squaresrt.js",
-	"module": "squaresrt.esm.js",
 	"types": "squaresrt.d.ts",
 	"publishConfig": {
 		"access": "public"
