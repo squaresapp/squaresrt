@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<meta name="author" content="Paul Gordon">
+<meta name="description" content="This is the description of the feed">
+<meta name="theme-color" content="#000000">
+<link rel="feed" type="text/plain" href="https://webfeed-tulips.pages.dev/index.txt">
+
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="manifest" href="icon/manifest.json">
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800,900" rel="stylesheet" />
+
+<script src="https://cdn.jsdelivr.net/npm/@squaresapp/rawjs/raw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/webfeed@2.2.3/webfeed.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/webfeed-follow/min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/squaresjs@0.1.1/squares.min.js"></script>
+<script src="./+build/squaresrt.debug.js"></script>
+<style>
+*
+{
+	position: relative;
+	box-sizing: border-box;
+}
+HTML
+{
+	font-family: Inter;
+	background-color: black;
+	color: white;
+}
+HTML, BODY
+{
+	margin: 0;
+	min-height: 100%;
+	height: 100%;
+}
+.hero
+{
+	padding: 30px 30px 10px;
+	text-align: center;
+}
+.hero > *
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+.hero .avatar
+{
+	display: block;
+	border-radius: 100%;
+	max-width: 200px;
+}
+.hero H1
+{
+	font-size: 40px;
+	font-weight: 800;
+}
+.hero P
+{
+	max-width: 20em;
+	line-height: 1.6;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -0.1px;
+	color: rgba(255, 255, 255, 0.9);
+}
+.hero .button
+{
+	display: block;
+	width: fit-content;
+	margin: 40px auto;
+	padding: 1em 3em;
+	border-radius: 10px;
+	outline: 0;
+	color: white;
+	text-decoration: none;
+	background-color: hsl(205, 100%, 50%);
+	font-weight: 700;
+}
+</style>
+
+<section class="hero" style="height: 50vh">
+	<img src="avatar.jpg" class="avatar">
+	<h1>Paul Gordon</h1>
+	<p>This a Squares blog that was generated with the Squares app. Click the button below to get updates to the webfeed below in Squares.</p>
+	<a class="button" data-webfeed-href="https://webfeed-tulips.pages.dev/index.txt">Follow This Webfeed</a>
+</section>
+
+<script src="+build/squaresrt.debug.js"></script>

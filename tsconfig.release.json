@@ -1,0 +1,9 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outFile": "+build/squaresrt.js"
+	},
+	"exclude": [
+		"*.cover.ts"
+	]
+}

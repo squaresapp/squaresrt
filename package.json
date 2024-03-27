@@ -1,0 +1,39 @@
+{
+	"name": "squaresrt",
+	"author": "Paul Gordon",
+	"description": "The library that powers blogs generated with the Squares app",
+	"version": "1.0.7",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/squaresapp/squaresrt"
+	},
+	"bugs": {
+		"url": "https://github.com/squaresapp/squaresrt/issues"
+	},
+	"main": "squaresrt.js",
+	"browser": "squaresrt.js",
+	"module": "squaresrt.esm.js",
+	"types": "squaresrt.d.ts",
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"LICENSE.txt",
+		"squaresrt.js",
+		"squaresrt.min.js",
+		"squaresrt.d.ts",
+		"squaresrt.d.ts.map"
+	],
+	"scripts": {
+		"test": "exit 0",
+		"serve": "npx vite --host --port 4321",
+		"bundle": "tsc -p tsconfig.release.json && terser ./+build/squaresrt.js > ./+build/squaresrt.min.js",
+		"release": "npm run bundle && cd ./+build && cp ../package.json ./package.json && np && cp ./package.json ../package.json"
+	},
+	"devDependencies": {
+		"@squaresapp/rawjs": "^1.3.19",
+		"squaresjs": "^0.1.0",
+		"webfeed": "^2.2.3"
+	}
+}
